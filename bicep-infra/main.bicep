@@ -24,9 +24,9 @@ param location string
 param locationShort string
 
 // ========== //
-// Resource group //
+// Resource groups //
 // ========== //
-resource rgNetwork 'Microsoft.Resources/resourceGroups@2025-04-01' = {
+resourc rgNetwork 'Microsoft.Resources/resourceGroups@2025-04-01' = {
   name: 'rg-${projectCode}-${environment}-${locationShort}'
   location: location
 }
