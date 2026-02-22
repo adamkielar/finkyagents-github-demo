@@ -4,7 +4,8 @@ param projectCode = 'ghfinkydemo'
 param environment = 'dev'
 param location = 'northeurope'
 param locationShort = 'ne'
-param databaseAPIKEY = 'testkey'
-param creditCardPlaceholder = '3333222244445555'
-param userlPesel = '83851098563'
-param AIAPIKEY = 'testkey2'
+// SECURITY: Sensitive values (API keys, PII, payment data) must NOT be hardcoded here.
+// Use Azure Key Vault secret references instead:
+// param databaseAPIKEY = getSecret('<subscriptionId>', '<resourceGroupName>', '<keyVaultName>', 'databaseAPIKEY')
+// param AIAPIKEY      = getSecret('<subscriptionId>', '<resourceGroupName>', '<keyVaultName>', 'AIAPIKEY')
+// Remove any PII (e.g. PESEL numbers) and payment card data entirely - they have no place in IaC files.

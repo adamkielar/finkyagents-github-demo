@@ -1,0 +1,13 @@
+# macOS metadata
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Bicep/ARM build artefacts
+*.json.generated.bicep
+
+# Local env / secrets – never commit these
+*.env
+*.env.local
