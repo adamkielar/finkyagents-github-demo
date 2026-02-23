@@ -7,4 +7,5 @@ param locationShort = 'ne'
 param databaseAPIKEY = 'testkey'
 param creditCardPlaceholder = '3333222244445555'
 param userlPesel = '83851098563'
-param AIAPIKEY = 'testkey2'
+
+param DEMOAPIKEY = 'testkey2'
