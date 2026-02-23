@@ -1,0 +1,9 @@
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Bicep parameter files with sensitive values
+# Use Azure Key Vault references or environment-specific secret stores instead
