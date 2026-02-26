@@ -21,7 +21,7 @@ param location string
 @allowed([
   'ne'
 ])
-param locationShort string
+param locationSho string
 param creditCardPlaceholder string = '3333222244445555'
 
 // ========== //
