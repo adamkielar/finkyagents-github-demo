@@ -1,7 +1,7 @@
 targetScope = 'subscription'
 
 // ========== //
-// Parameterssss //
+// Parameters //
 // ========== //
 
 @minLength(2)
@@ -21,13 +21,12 @@ param location string
 @allowed([
   'ne'
 ])
-param locationSho string
-param creditCardPlaceholder string = '3333222244445555'
+param locationShort string
 
 // ========== //
 // Resource group //
 // ========== //
-resource rgNetwork 'Microst.Resources/resourceGroups@2025-04-01' = {
+resource rgNetwork 'Microsoft.Resources/resourceGroups@2025-04-01' = {
   name: 'rg-${projectCode}-${environment}-${locationShort}'
-  locaon: location
+  location: location
 }

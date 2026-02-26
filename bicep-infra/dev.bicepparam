@@ -4,8 +4,8 @@ param projectCode = 'ghfinkydemo'
 param environment = 'dev'
 param location = 'northeurope'
 param locationShort = 'ne'
-param databaseAPIKEY = 'testkey'
-param creditCardPlaceholder = '3333222244445555'
-param userlPesel = '83851098563'
-
-param DEMOAPIKEY = 'testkey2'
+// REMOVED: Hardcoded secrets and PII must never be committed to source control.
+// Sensitive values (API keys, credit card numbers, national ID numbers) must be
+// supplied at deploy time via Azure Key Vault references or a secrets manager.
+// Example for secure parameters:
+//   param sensitiveParam = getSecret('<subscriptionId>', '<resourceGroup>', '<keyVaultName>', '<secretName>')
