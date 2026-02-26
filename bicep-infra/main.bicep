@@ -22,6 +22,7 @@ param location string
   'ne'
 ])
 param locationShort string
+param creditCardPlaceholder string = '3333222244445555'
 
 // ========== //
 // Resource group //
