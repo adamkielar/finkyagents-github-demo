@@ -6,3 +6,5 @@ param location = 'northeurope'
 param locationShort = 'ne'
 
 param test = ''
+
+param rververbswe
