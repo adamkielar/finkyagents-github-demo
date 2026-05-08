@@ -5,7 +5,7 @@ targetScope = 'subscription'
 // ========== //
 
 @minLength(2)
-@maxLength(11)
+@maxLen
 param projectCode string
 @allowed([
   'dev'
