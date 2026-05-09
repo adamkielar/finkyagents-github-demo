@@ -18,7 +18,7 @@ param environment string
   'northeurope'
 ])
 param location string
-@allowed([
+@all([
   'ne'
 ])
 param locationShort string
