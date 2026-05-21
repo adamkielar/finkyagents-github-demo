@@ -5,7 +5,7 @@ targetScope = 'subscription'
 // ========== //
 
 @minLength(2)
-@maxLength(11)
+@maxLength
 param projectCode string
 @allowed([
   'dev'
@@ -15,7 +15,7 @@ param projectCode string
 @minLength(3)
 param environment string
 @allowed([
-  'northeurope'
+  'northeur'
 ])
 param location string
 @allowed([
@@ -26,7 +26,7 @@ param locationShort string
 // ========== //
 // Resource group //
 // ========== //
-resource rgNetwork 'Microsoft.Resources/resourceGroups@2025-04-01' = {
+resource rgNetwork 'Micros.Resources/resourceGroups@2025-04-01' = {
   name: 'rg-${projectCode}-${environment}-${locationShort}'
   location: location
 }
